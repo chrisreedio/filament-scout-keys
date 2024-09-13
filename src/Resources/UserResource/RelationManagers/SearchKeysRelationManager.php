@@ -6,6 +6,7 @@ use ChrisReedIO\ScoutKeys\Filament\Enums\ScoutEngineType;
 use ChrisReedIO\ScoutKeys\Models\SearchKey;
 use Filament\Forms;
 use Filament\Forms\Form;
+use Filament\Notifications\Notification;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Support\Colors\Color;
 use Filament\Tables;
@@ -71,8 +72,19 @@ class SearchKeysRelationManager extends RelationManager
                     ->color('danger')
                     ->button()
                     ->action(function (SearchKey $key) {
-                        $key->revoke();
-                        $key->delete();
+                        if ($key->revoke()) {
+                            Notification::make()
+                                ->title('Search Key Revoked')
+                                ->body('The search key has been revoked.')
+                                ->success()
+                                ->send();
+                        } else {
+                            Notification::make()
+                                ->title('Search Key Revocation Failed')
+                                ->body('The search key could not be revoked.')
+                                ->danger()
+                                ->send();
+                        }
                     }),
             ])
             ->bulkActions([
