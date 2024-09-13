@@ -1,6 +1,6 @@
 <?php
 
-namespace ChrisReedIO\FilamentScoutKeys;
+namespace ChrisReedIO\ScoutKeys\Filament;
 
 use Filament\Support\Assets\AlpineComponent;
 use Filament\Support\Assets\Asset;
@@ -13,8 +13,8 @@ use Livewire\Features\SupportTesting\Testable;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use ChrisReedIO\FilamentScoutKeys\Commands\FilamentScoutKeysCommand;
-use ChrisReedIO\FilamentScoutKeys\Testing\TestsFilamentScoutKeys;
+use ChrisReedIO\ScoutKeys\Filament\Commands\FilamentScoutKeysCommand;
+use ChrisReedIO\ScoutKeys\Filament\Testing\TestsFilamentScoutKeys;
 
 class FilamentScoutKeysServiceProvider extends PackageServiceProvider
 {
@@ -39,7 +39,8 @@ class FilamentScoutKeysServiceProvider extends PackageServiceProvider
                     ->askToStarRepoOnGitHub('chrisreedio/filament-scout-keys');
             });
 
-        $configFileName = $package->shortName();
+        // $configFileName = $package->shortName();
+        $configFileName = 'scout-keys-filament';
 
         if (file_exists($package->basePath("/../config/{$configFileName}.php"))) {
             $package->hasConfigFile();
@@ -101,8 +102,8 @@ class FilamentScoutKeysServiceProvider extends PackageServiceProvider
     {
         return [
             // AlpineComponent::make('filament-scout-keys', __DIR__ . '/../resources/dist/components/filament-scout-keys.js'),
-            Css::make('filament-scout-keys-styles', __DIR__ . '/../resources/dist/filament-scout-keys.css'),
-            Js::make('filament-scout-keys-scripts', __DIR__ . '/../resources/dist/filament-scout-keys.js'),
+            // Css::make('filament-scout-keys-styles', __DIR__ . '/../resources/dist/filament-scout-keys.css'),
+            // Js::make('filament-scout-keys-scripts', __DIR__ . '/../resources/dist/filament-scout-keys.js'),
         ];
     }
 
@@ -112,7 +113,7 @@ class FilamentScoutKeysServiceProvider extends PackageServiceProvider
     protected function getCommands(): array
     {
         return [
-            FilamentScoutKeysCommand::class,
+            // FilamentScoutKeysCommand::class,
         ];
     }
 

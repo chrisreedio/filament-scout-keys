@@ -1,5 +1,5 @@
 <?php
 
-namespace ChrisReedIO\FilamentScoutKeys;
+namespace ChrisReedIO\ScoutKeys\Filament;
 
 class FilamentScoutKeys {}

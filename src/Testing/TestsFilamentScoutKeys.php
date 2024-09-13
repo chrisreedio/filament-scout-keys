@@ -1,6 +1,6 @@
 <?php
 
-namespace ChrisReedIO\FilamentScoutKeys\Testing;
+namespace ChrisReedIO\ScoutKeys\Filament\Testing;
 
 use Livewire\Features\SupportTesting\Testable;
 

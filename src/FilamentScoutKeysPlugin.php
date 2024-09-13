@@ -1,7 +1,8 @@
 <?php
 
-namespace ChrisReedIO\FilamentScoutKeys;
+namespace ChrisReedIO\ScoutKeys\Filament;
 
+use ChrisReedIO\ScoutKeys\Filament\Resources\SearchKeyResource;
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
@@ -14,7 +15,9 @@ class FilamentScoutKeysPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        //
+        $panel->resources([
+            SearchKeyResource::class,
+        ]);
     }
 
     public function boot(Panel $panel): void

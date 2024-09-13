@@ -46,7 +46,7 @@ return [
 ## Usage
 
 ```php
-$filamentScoutKeys = new ChrisReedIO\FilamentScoutKeys();
+$filamentScoutKeys = new ChrisReedIO\ScoutKeys\Filament();
 echo $filamentScoutKeys->echoPhrase('Hello, ChrisReedIO!');
 ```
 

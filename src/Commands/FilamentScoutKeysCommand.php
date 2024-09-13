@@ -1,6 +1,6 @@
 <?php
 
-namespace ChrisReedIO\FilamentScoutKeys\Commands;
+namespace ChrisReedIO\ScoutKeys\Filament\Commands;
 
 use Illuminate\Console\Command;
 

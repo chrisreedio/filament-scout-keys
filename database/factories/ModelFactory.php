@@ -1,6 +1,6 @@
 <?php
 
-namespace ChrisReedIO\FilamentScoutKeys\Database\Factories;
+namespace ChrisReedIO\ScoutKeys\Filament\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

@@ -1,5 +1,5 @@
 <?php
 
-use ChrisReedIO\FilamentScoutKeys\Tests\TestCase;
+use ChrisReedIO\ScoutKeys\Filament\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

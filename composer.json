@@ -40,13 +40,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ChrisReedIO\\FilamentScoutKeys\\": "src/",
-            "ChrisReedIO\\FilamentScoutKeys\\Database\\Factories\\": "database/factories/"
+            "ChrisReedIO\\ScoutKeys\\Filament\\": "src/",
+            "ChrisReedIO\\ScoutKeys\\Filament\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "ChrisReedIO\\FilamentScoutKeys\\Tests\\": "tests/"
+            "ChrisReedIO\\ScoutKeys\\Filament\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -66,10 +66,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ChrisReedIO\\FilamentScoutKeys\\FilamentScoutKeysServiceProvider"
+                "ChrisReedIO\\ScoutKeys\\Filament\\FilamentScoutKeysServiceProvider"
             ],
             "aliases": {
-                "FilamentScoutKeys": "ChrisReedIO\\FilamentScoutKeys\\Facades\\FilamentScoutKeys"
+                "FilamentScoutKeys": "ChrisReedIO\\ScoutKeys\\Filament\\Facades\\FilamentScoutKeys"
             }
         }
     },
