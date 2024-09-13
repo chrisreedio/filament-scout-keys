@@ -44,7 +44,8 @@ class SearchKeysRelationManager extends RelationManager
                     ->getStateUsing(fn (SearchKey $key) => $key->scoped_key !== null),
                 Tables\Columns\TextColumn::make('expires_at')
                     ->formatStateUsing(fn (SearchKey $key) => $key->expires_at->diffForHumans())
-                    ->icon(fn (SearchKey $key
+                    ->icon(fn (
+                        SearchKey $key
                     ) => $key->expires_at->isPast() ? 'heroicon-o-exclamation-circle' : 'heroicon-o-check-badge')
                     ->color(fn (SearchKey $key) => $key->expires_at->isPast() ? Color::Red : Color::Green)
                     // ->dateTime('Y-m-d H:i:s')
