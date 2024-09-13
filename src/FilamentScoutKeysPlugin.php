@@ -1,15 +1,15 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace ChrisReedIO\FilamentScoutKeys;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class FilamentScoutKeysPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-scout-keys';
     }
 
     public function register(Panel $panel): void
