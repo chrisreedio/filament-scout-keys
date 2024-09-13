@@ -34,10 +34,10 @@ class SearchKeysRelationManager extends RelationManager
             ])
             ->headerActions([
                 Tables\Actions\Action::make('Generate')
-                ->label('Generate')
-                ->action(function (Tables\Actions\Action $action) {
-                    // $action->getrecord
-                })
+                    ->label('Generate')
+                    ->action(function (Tables\Actions\Action $action) {
+                        // $action->getrecord
+                    }),
                 // Tables\Actions\CreateAction::make(),
             ])
             ->actions([
