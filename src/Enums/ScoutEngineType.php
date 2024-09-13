@@ -2,11 +2,11 @@
 
 namespace ChrisReedIO\ScoutKeys\Filament\Enums;
 
+use ChrisReedIO\ScoutKeys\Enums\ScoutEngineType as BaseEngineType;
 use Filament\Support\Colors\Color;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
-use ChrisReedIO\ScoutKeys\Enums\ScoutEngineType as BaseEngineType;
 
 enum ScoutEngineType: string implements HasColor, HasIcon, HasLabel
 {
