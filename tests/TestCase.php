@@ -4,6 +4,7 @@ namespace ChrisReedIO\ScoutKeys\Filament\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
+use ChrisReedIO\ScoutKeys\Filament\FilamentScoutKeysServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
@@ -16,7 +17,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use RyanChandler\BladeCaptureDirective\BladeCaptureDirectiveServiceProvider;
-use ChrisReedIO\ScoutKeys\Filament\FilamentScoutKeysServiceProvider;
 
 class TestCase extends Orchestra
 {
