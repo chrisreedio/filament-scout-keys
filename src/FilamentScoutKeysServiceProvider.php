@@ -43,7 +43,7 @@ class FilamentScoutKeysServiceProvider extends PackageServiceProvider
         $configFileName = 'scout-keys-filament';
 
         if (file_exists($package->basePath("/../config/{$configFileName}.php"))) {
-            $package->hasConfigFile();
+            $package->hasConfigFile('scout-keys-filament');
         }
 
         if (file_exists($package->basePath('/../database/migrations'))) {
